@@ -16,7 +16,6 @@
 
 .image {
     background-color: #afafaf;
-    text-align: center;
 }
 
 
@@ -37,12 +36,6 @@ body {
 .container {
     max-width: 1640px;
     margin: 0 auto;
-}
-
-.grid {
-	display: grid;
-	grid-template-columns: repeat(12, 122px);
-	grid-column-gap: 16px;
 }
 
 a {
@@ -71,7 +64,7 @@ img {
 
 .bigtitle {
     font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
-    font-size: 65px;
+    font-size: 34px;
 }
 
 .smalltitle {
@@ -95,13 +88,19 @@ img {
 }
 
 #header-logo {
-    grid-column: 1/3;
     height: 54px;
     padding-left: 30px;
 }
 
 #main-nav {
-    grid-column: 4/-1;
+    display: none;
+}
+
+.burger {
+    height: 10px;
+	background-color:#fff;
+	display: block;
+	margin-bottom: 10px;
 }
 
 /* PRODUCTS PAGE */
@@ -116,11 +115,13 @@ img {
 #flavours-hero h2 {
     margin-bottom: 30px;
     padding-top: 25px;
+    text-align: center;
 }
 
 .bottlepic {
     border-radius: 20px;
     height: 386px;
+    width: 218px;
     }
 
 .flavour-title {
@@ -129,12 +130,8 @@ img {
 }
 
 #all-flavours {
-    display: inline-flex;
-    justify-content: center;
-}
-
-#all-flavours div {
-    margin-right: 12px;
+    display: block;
+    text-align: center;
 }
 
 #flavours-blurb {
@@ -143,7 +140,6 @@ img {
 }
 
 #flavours-blurb p {
-    grid-column: 2/12;
     text-align: left;
     padding: 50px;
     color: #000E20;
@@ -160,9 +156,9 @@ img {
 /* RETAILERS */
 
 #retailers h2 {
-    grid-column: 4/9;
     margin-top: 50px;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 .store-logo {
@@ -171,19 +167,14 @@ img {
     height: 155px;
 }
 
-#retailer-logos {
-    grid-column: 2/7;
-}
-
 #rocketship {
     display: none;
 }
 
 #retailers h3 {
-font-size: 45px;
+font-size: 12px;
 font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
 grid-row: 3/4;
-grid-column: 2/-1;
 margin-bottom: 25px;
 }
 
@@ -191,6 +182,8 @@ margin-bottom: 25px;
 width: 44px;
 height: 50px;
 padding-bottom: 50px;
+grid-row: 3/4;
+justify-self: right;
 }
 
 /* FOOTER */
@@ -201,12 +194,10 @@ padding-bottom: 50px;
 
 /* newsletter signup */
 #footer-newsletter {
-    grid-column: 1/9;
     display: none;
 }
 
 #footer-newsletter h3 {
-    grid-column: 1/5;
     padding-top: 50px;
 }
 
@@ -238,13 +229,11 @@ padding-bottom: 50px;
 }
 
 #footer-nav {
-    grid-column: 1/-1;
     margin-top: 52px;
     text-align: center;
 }
 
 #footer p {
-    grid-column: 1/-1;
     font-size: 20px;
     text-align: center;
     margin-top: 60px;
@@ -262,15 +251,17 @@ padding-bottom: 50px;
         height: 113px;
     }
 
-    #main-nav {
-        height: 113px;
-    }
-
     /* flavours */
     .bottlepic {
-        border-radius: 20px;
-        height: 312px;
-        }
+    border-radius: 20px;
+    height: 321px;
+    width: 169px;
+    }
+
+    #all-flavours {
+        display: inline-flex;
+        justify-content: center;
+    }
 
     #all-flavours div {
         margin-right: 7px;
@@ -287,27 +278,30 @@ padding-bottom: 50px;
     }
 
     /* RETAILERS */
-    #retailer-logos {
-        grid-column: 2/7;
-    }
-    
     #rocketship {
         display: block;
-        grid-column: 8/12;
         height: 560px;
     }
 
-/* FOOTER */
-#footer-logo {
-    height: 80px;
-    width: 190px;
-}
+    #retailers h3 {
+        font-size: 24px;
+    }
+
+    /* FOOTER */
+    #footer-logo {
+        height: 80px;
+        width: 190px;
+    }
 
 
 }
 
 /* DESKTOP SIZE */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1640px) {
+    .bigtitle {
+        font-size: 65px;
+    }
+
     #header-con {
         height: 160px;
     }
@@ -317,7 +311,12 @@ padding-bottom: 50px;
     }
 
     #main-nav {
+        display: block;
         height: 130px;
+    }
+
+    #mobile-nav {
+        display: none;
     }
 
     /* flavours */
@@ -328,6 +327,7 @@ padding-bottom: 50px;
     
     .bottlepic {
         height: 603px;
+        width: 318px;
         }
 
     #all-flavours div {
@@ -355,14 +355,16 @@ padding-bottom: 50px;
         height: 900px;
     }
 
+    #retailers h3 {
+        font-size: 45px;
+    }
+
     /* FOOTER */
     #footer-newsletter {
-        grid-column: 1/9;
         display: block;
     }
 
     #footer-logo {
-        grid-column: 9/-1;
         grid-row: 1/2;
         margin-top: 100px;
         height: 169px;
@@ -370,7 +372,6 @@ padding-bottom: 50px;
     }
 
     #footer-nav {
-        grid-column: 1/-1;
         margin-top: 52px;
         text-align: center;
     }

@@ -18,14 +18,21 @@
     <div class="container">
 
         <div id="header-con" class="con">
-            <header id="main-header" class="grid">
+            <header id="main-header" class="grid-con">
                 <h2 class="hidden">Header</h2>
 
-                <div id="header-logo" class="logo image">
+                <div id="header-logo" class="logo image col-start-1 col-end-3">
                     <p>logo</p>
                 </div>
 
-                <nav id="main-nav" class="nav con2">
+                <nav id="mobile-nav" class="col-start-4 col-end-5 m-col-start-11 m-col-end-13">
+                    <h2 class="hidden">Main Navigation</h2>
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                 </nav>
+
+                <nav id="main-nav" class="nav con2 l-col-start-4 l-col-end-13">
                     <!-- <ul>
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="products.html">SHOP</a></li>
@@ -41,11 +48,11 @@
         <main>
             <h2 class="hidden">Products Page Content</h2>
 
-            <section id="flavours-hero" class="con2">
+            <section id="flavours-hero" class="con2 grid-con">
                 <h2 class="bigtitle">FLAVOURS</h2>
 
-                <div id="all-flavours">
-                    <div id="flavour1" class="bottlepic image">
+                <div id="all-flavours" class="col-span-full">
+                    <div id="flavour1" class="bottlepic image col-start-2 col-end-4">
                         <p class="flavour-title">GALAXY GRAPE</p>
                     </div>
 
@@ -66,7 +73,7 @@
                     </div>
                 </div>
 
-                <article id="flavours-blurb" class="grid">
+                <article id="flavours-blurb" class= "col-span-full">
                     <h2 class="hidden">Promotional flavour text</h2>
                     <p class="con3">flavours blurb</p>
                 </article>
@@ -78,10 +85,10 @@
         <p>alien and astronaut</p>
     </section>
             
-            <section id="retailers" class="con2 grid">
-                <h2 class="bigtitle con3">OUR LAUNCHPADS</h2>
+            <section id="retailers" class="con2 grid-con">
+                <h2 class="bigtitle con3 col-span-full">OUR LAUNCHPADS</h2>
 
-                <div id="retailer-logos">
+                <div id="retailer-logos" class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7">
                     <div id="superstore" class="store-logo image">
                         <p>rcs logo</p>
                     </div>
@@ -95,13 +102,13 @@
                     </div>
                 </div>
 
-                <div id="rocketship" class="image">
+                <div id="rocketship" class="image m-col-start-8 m-col-end-12 l-col-start-8 l-col-end-12">
                     <p>rocketship</p>
                 </div>
 
-                <h3 class="con3">ONLINE SHOP COMING SOON!</h3>
+                <h3 class="con3 col-span-2 m-col-start-2 m-col-end-8 l-col-start-2 l-col-end-8">ONLINE SHOP COMING SOON!</h3>
     
-                <div class="top-button con3">
+                <div class="top-button con3 col-start-4 col-end-5 m-col-start-12 m-col-end-13 l-col-start-12 l-col-end-13">
                 <p>top</p>
                 </div>
 
@@ -110,7 +117,7 @@
         </main>
 
         <div id="footer-con" class="con">
-            <footer id="footer" class="grid">
+            <footer id="footer" class="grid-con">
                 <h2 class="hidden">Footer</h2>
 
                 <aside id="footer-newsletter">
