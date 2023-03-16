@@ -58,9 +58,9 @@ img {
     margin-left: 50px;
 }
 
-.logo {
+/* .logo {
     width: 8em;
-}
+} */
 
 .bigtitle {
     font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
@@ -84,7 +84,7 @@ img {
 #header-con {
 	padding-top: 15px;
 	padding-bottom: 15px;
-	height: 70px;
+	height: 90px;
 }
 
 #header-logo {
@@ -94,6 +94,11 @@ img {
 
 #main-nav {
     display: none;
+}
+
+#mobile-nav {
+    justify-content: center;
+    align-self: center;
 }
 
 .burger {
@@ -126,12 +131,17 @@ img {
 
 .flavour-title {
     font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 26px;
 }
 
 #all-flavours {
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#all-flavours div {
+    align-self: center;
+    margin-top: 30px;
 }
 
 #flavours-blurb {
@@ -163,7 +173,7 @@ img {
 
 .store-logo {
     margin-bottom: 48px;
-    width: 358px;
+    /* width: 358px; */
     height: 155px;
 }
 
@@ -208,7 +218,7 @@ justify-self: right;
 	border: none;
 	margin-top: 60px;
 	padding-left: 20px;
-	width: 674px;
+	/* width: 674px; */
 	height: 80px;
     border-radius: 10px;
 }
@@ -225,15 +235,17 @@ justify-self: right;
 
 #footer-logo {
     height: 54px;
-    width: 127px;
+    /* width: 127px; */
+    text-align: center;
+    margin-top: 25px;
 }
 
 #footer-nav {
-    margin-top: 52px;
+    margin-top: 33px;
     text-align: center;
 }
 
-#footer p {
+#copyright {
     font-size: 20px;
     text-align: center;
     margin-top: 60px;
@@ -242,7 +254,7 @@ justify-self: right;
 }
 
 /* TABLET SIZE */ 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
     #header-con {
         height: 150px;
     }
@@ -260,6 +272,7 @@ justify-self: right;
 
     #all-flavours {
         display: inline-flex;
+        flex-direction: row;
         justify-content: center;
     }
 
@@ -290,7 +303,8 @@ justify-self: right;
     /* FOOTER */
     #footer-logo {
         height: 80px;
-        width: 190px;
+        /* width: 190px; */
+        margin-top: 57px;
     }
 
 
@@ -348,7 +362,7 @@ justify-self: right;
     .store-logo {
         margin-bottom: 150px;
         width: 672px;
-        height: 290px;
+        height: 200px;
     }
 
     #rocketship {
@@ -368,12 +382,11 @@ justify-self: right;
         grid-row: 1/2;
         margin-top: 100px;
         height: 169px;
-        width: 400px;
+        /* width: 400px; */
     }
 
     #footer-nav {
         margin-top: 52px;
-        text-align: center;
     }
 
 }
